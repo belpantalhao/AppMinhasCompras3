@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMinhasCompras.View.NovoProduto"
+             Title="Novo Produto"
+             BackgroundImage="Lista.png">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Salvar" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Label Text="Descrição:" VerticalOptions="Center" HorizontalOptions="Center" Padding="50" TextColor="Black" FontSize="Large"/>
+            <Entry x:Name="txt_descricao"  VerticalOptions="Center" Margin="20"/>
+
+            <Label Text="Quantidade:" VerticalOptions="Center" HorizontalOptions="Center"  Padding="50" TextColor="Black" FontSize="Large"/>
+            <Entry x:Name="txt_quantidade"  VerticalOptions="Center" Margin="20" />
+
+            <Label Text="Preço:" VerticalOptions="Center" HorizontalOptions="Center"  Padding="50" TextColor="Black" FontSize="Large"/>
+            <Entry x:Name="txt_preco"  VerticalOptions="Center" Margin="20"/>          
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
